@@ -1,4 +1,4 @@
-## Project Name
+# Project Name
 
  Add short description of project here > 
 
