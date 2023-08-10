@@ -21,7 +21,7 @@ The detector works by uploading an image of the currency to a Jetson Nano and ru
 9. Select Open Folder and navigate to jetson-inference. Input your password again if required.
 10. Click Yes, I trust the authors to access and start working on your projects in this directory.
 
-**Preping the Dataset.**
+## Preping the Dataset.
 
 1. Navigate to jetson-inference/python/training/classification/data.
 2. Extract the dataset ZIP file.
