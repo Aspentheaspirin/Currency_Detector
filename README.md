@@ -31,9 +31,20 @@ The detector works by uploading an image of the currency to a Jetson Nano and ru
 7. Distribute the images from your ZIP file among these folders, with 80% in the train folder, 10% in the val folder, and 10% in the test folder for each currnecy type. Unfortunately, this will be a manual task and may take some time.
 
 ## Training the Network
+
 1. Go to the jetson-inference folder and run ./docker/run.sh.
 2. Once inside the Docker container, navigate to jetson-inference/python/training/classification.
-3. Run the training script with the following command: `python3 train.py --model-dir=models/currency_detector data/currency_detector --epochs=**desired number of epochs`. Replace the bolded text with the desired number of epochs. This process may take quite some time.
+3. Run the training script with the following command: `python3 train.py --model-dir=models/currency_detector data/currency_detector --epochs=desired number of epochs`. Replace the "desired number of epochs" with how many epochs you want. This process may take quite some time.
 4. You can stop the process at any time using Ctl+C and resume it later using the --resume and --epoch-start flags.
+5. While still in the docker, run the code `python3 onnx_export.py --model-dir=models/currency_detector`. This is going to convert your model to the ONNX format.
+6. Exit the docker by pressing **Ctrl + D**.
+
+## Running the Model
+
+1. Make sure you are in **jetson-inference/python/training/classification**.
+2. Type the command `ls models/currency_detector/`. You should see a file titled resnet18.onnx.
+3. Use the codes `NET=models/currency_detector` and `DATASET=data/currency_detector` to set the varibles.
+4. To classify the image, run the comand `imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/FILE/INPUT.jpg OUTPUT.jpg`. Replace 'FILE' with the desired test file. Replace 'INPUT' with the desired input image. Replace 'OUTPUT' with the name of what you want the output to be.
+
 
 [View a video explanation here](video link)
