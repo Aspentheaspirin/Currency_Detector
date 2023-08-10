@@ -8,7 +8,7 @@ The purpose of this model is to identify the differences between three different
 
 The detector works by uploading an image of the currency to a Jetson Nano and running it through the program. It uses the information it has gathered from the training to determine which catagory the image best fits in. The information gained from the detector can help someone figure out how much the bill is worth and where it can be used. 
 ## Running this project
-Launch VS Code.
+**Launch VS Code.**
 
 1. Click on the small green icon at the bottom left of your screen to access the SSH menu.
 2. Select + Add New SSH Host to add a new host.
@@ -20,5 +20,14 @@ Launch VS Code.
 8. You'll be asked for a password after connecting to the Nano. Input your Nano password and hit Enter.
 9. Select Open Folder and navigate to jetson-inference. Input your password again if required.
 10. Click Yes, I trust the authors to access and start working on your projects in this directory.
+
+**Preping the Dataset.**
+
+1. Navigate to jetson-inference/python/training/classification/data.
+2. Extract the dataset ZIP file.
+3. Inside jetson-inference/python/training/classification/data, create a new folder called currency_detector. Inside currency_detector, add three folders: test, train, val, and a file named labels.txt.
+5. In the train directory inside currency_detector, create 3 folders named euro, japanese_yen, and us_dollar.
+6. Copy these folders to the val and test directories.
+7. Distribute the images from your ZIP file among these folders, with 80% in the train folder, 10% in the val folder, and 10% in the test folder for each currnecy type. Unfortunately, this will be a manual task and may take some time.
 
 [View a video explanation here](video link)
