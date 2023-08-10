@@ -1,4 +1,4 @@
-# Project Name
+# Currency_Detector
 
  Add short description of project here > 
 
