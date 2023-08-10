@@ -2,9 +2,7 @@
 
  Add short description of project here > 
 
-![add image descrition here](https://i.imgur.com/Z4jsNOu.jpg)
-![image](https://i.imgur.com/HxQXFX7.jpg)
-![image](https://i.imgur.com/vSjUgzI.jpg)
+![add image descrition here](https://i.imgur.com/Z4jsNOu.jpg)![image](https://i.imgur.com/HxQXFX7.jpg)![image](https://i.imgur.com/vSjUgzI.jpg)
 
 ## The Algorithm
 
