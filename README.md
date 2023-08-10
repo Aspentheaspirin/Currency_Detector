@@ -2,7 +2,7 @@
 
  Add short description of project here > 
 
-![add image descrition here](direct image link here)
+![add image descrition here](https://i.imgur.com/Z4jsNOu.jpg)
 
 ## The Algorithm
 
