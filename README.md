@@ -47,4 +47,4 @@ The detector works by uploading an image of the currency to a Jetson Nano and ru
 4. To classify the image, run the comand `imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/FILE/INPUT.jpg OUTPUT.jpg`. Replace 'FILE' with the desired test file. Replace 'INPUT' with the desired input image. Replace 'OUTPUT' with the name of what you want the output to be.
 
 
-[View a video explanation here](video link)
+[View a video explanation here](https://www.youtube.com/watch?v=raq6QqIdmKU&t=210s&ab_channel=AspenGrometer)
