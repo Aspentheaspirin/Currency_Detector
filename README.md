@@ -3,8 +3,8 @@
  Add short description of project here > 
 
 ![add image descrition here](https://i.imgur.com/Z4jsNOu.jpg)
-!(https://i.imgur.com/HxQXFX7.jpg)
-!(https://i.imgur.com/vSjUgzI.jpg)
+![image](https://i.imgur.com/HxQXFX7.jpg)
+![image](https://i.imgur.com/vSjUgzI.jpg)
 
 ## The Algorithm
 
