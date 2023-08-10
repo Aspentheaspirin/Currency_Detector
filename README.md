@@ -34,7 +34,7 @@ The detector works by uploading an image of the currency to a Jetson Nano and ru
 
 1. Go to the jetson-inference folder and run ./docker/run.sh.
 2. Once inside the Docker container, navigate to jetson-inference/python/training/classification.
-3. Run the training script with the following command: `python3 train.py --model-dir=models/currency_detector data/currency_detector --epochs=desired number of epochs`. Replace the "desired number of epochs" with how many epochs you want. This process may take quite some time.
+3. Run the training script with the following command: `python3 train.py --model-dir=models/currency_detector --batch-size=4 --workers=1 data/currency_detector --epochs=desired number of epochs`. Replace the "desired number of epochs" with how many epochs you want. This process may take quite some time.
 4. You can stop the process at any time using Ctl+C and resume it later using the --resume and --epoch-start flags.
 5. While still in the docker, run the code `python3 onnx_export.py --model-dir=models/currency_detector`. This is going to convert your model to the ONNX format.
 6. Exit the docker by pressing **Ctrl + D**.
